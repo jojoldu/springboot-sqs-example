@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+cloud:
+  aws:
+    region:
+      static: ap-northeast-2
+sqs:
+  queueNames: {
+    "basic": "basic",
+    "basicDlq": "basic-dlq",
+    "point": "point",
+    "pointDlq": "point-dlq"
+  }
+
+---
+spring:
+  profiles: local
+sqs:
+  mock:
+    enabled: true
+
+---
+spring:
+  profiles: beta
