@@ -1,0 +1,15 @@
+cloud:
+  aws:
+    credentials:
+      accessKey: accessKey
+      secretKey: secretKey
+    region:
+      static: 리전 코드
+
+sqs:
+  queueNames: { # example
+    "basic": "basic",
+    "basicDlq": "basic-dlq",
+    "point": "point",
+    "pointDlq": "point-dlq"
+  }
