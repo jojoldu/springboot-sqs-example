@@ -1,4 +1,4 @@
-cloud:
+ㅌcloud:
   aws:
     credentials:
       accessKey: accessKey
